@@ -1,0 +1,88 @@
+/* font-family: 'Bebas Neue', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+/* font-family: 'Allison', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Allison&display=swap");
+
+/* font-family: 'Patrick Hand', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to top left, #0096ff, #00ffff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 70%;
+  width: 80%;
+  max-width: 860px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #f4edea;
+  border: #f4d1ae solid 10px;
+  border-radius: 5px;
+}
+
+.quotes {
+  text-align: center;
+  flex: 2;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px 50px;
+  margin-bottom: 0;
+}
+
+.quotes p {
+  font-size: 1.5rem;
+  font-family: "Bebas Neue", cursive;
+  margin-bottom: 30px;
+}
+.quotes h3 {
+  font-size: 1.5rem;
+  font-family: "Allison", cursive;
+}
+
+@media (max-width: 480px) {
+  .container {
+    border: #f4d1ae solid 6px;
+  }
+  .quotes p,
+  .quotes h3 {
+    font-size: 1.2rem;
+  }
+}
+
+#button {
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-family: "Patrick Hand", cursive;
+  margin: 10px 0;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  background: #f4d1ae;
+  margin-bottom: 50px;
+}
+
+#button:hover {
+  background-color: burlywood;
+  cursor: pointer;
+}
+
+#button:active {
+  background-color: darksalmon;
+}
